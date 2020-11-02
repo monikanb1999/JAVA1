@@ -9,6 +9,7 @@ class MyArray
     int myAr[] = {9,1,8,2,3,7};
     Arrays.sort(myAr);//{1,2,3,5,7,9}
     System.out.println(Arrays.toString(myAr));
+
     int[] arrName = new int[10];// one dimen array.
      arrName[0] = 10;
      arrName[1] = 20;
@@ -18,11 +19,14 @@ class MyArray
      System.out.println("my array length = " + arrName.length );
      for(int i=0; i<arrName.length ; i++)
        System.out.print(arrName[i] + "  ");
+     int result = callMyFunction(arrName);//passing my 1D array and getting an int value as return type
+     System.out.println("sum of my my array = "+result);
+    
      System.out.println("\n my 'a' array length = " + a.length );
     for(int i=0; i<a.length ; i++)
       System.out.print(a[i] + "  ");
-     int result = callMyFunction(arrName);//passing my 1D array and getting an int value as return type
-     System.out.println("sum of my my array = "+result);
+    
+    
   }
   static int callMyFunction(int sumArray[])
    {
